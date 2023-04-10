@@ -1,7 +1,3 @@
-
-const messageEl = document.getElementById("message-el")
-const sumEl = document.getElementById("sum-el")
-const cardsEl = document.getElementById("cards-el")
 let hasBlackJack = false
 let isAlive = false
 let cards = []
@@ -55,7 +51,7 @@ function renderGame() {
         isAlive = false
     }
     
-    messageEl.textContent = messageText
-    cardsEl.textContent = `Cards: ${cards.join(" ")}`
-    sumEl.textContent = `Sum: ${sum}`
+    document.getElementById("message-el").textContent = messageText
+    document.getElementById("cards-el").textContent = `Cards: ${cards.join(" ")}`
+    document.getElementById("sum-el").textContent = `Sum: ${sum}`
 }
